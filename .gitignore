@@ -1,7 +1,20 @@
+# Dependencies
 node_modules/
-typechain/
+package-lock.json
+yarn.lock
+
+# Environment variables
 env.json
-.tmp-addresses*.json
+.env
+.env.local
+
+# Build outputs
+typechain/
+cache/
+artifacts/
+flattened/
+
+# Data files
 data/gmxMigration
 data/esGmxDistribution
 data/bonds
@@ -9,9 +22,31 @@ data/batchSend
 data/nft
 data/snapshotBalance
 data/holders
-flattened
+.tmp-addresses*.json
 distribution-data*.json
 
-#Hardhat files
-cache
-artifacts
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
